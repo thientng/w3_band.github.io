@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+    <title>W3_Band</title>
+    <link rel="shortcut icon" href="./assets/img/icon/pngwing.com.png" type="image/x-icon"> <!-- HTML Favicon dùng để thêm icon cho title -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css"> <!-- cái nào mới thêm(link) vào thì để ở dưới, thì mới có thể hoạt động được vì cách hoạt động luôn ưu tiên những thứ mới được đặt ở dưới(bài độ ưu tiên CSS)  -->
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <!-- <link rel="stylesheet" href="./assets/img/slider/slider1.jpg"> -->
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Begin: Navigation -->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <!-- dấu thằng là target lên trên cùg trag -->
+                <li><a href="#band">Band</a></li>
+                <!-- có thể làm cho chuyển động mượt hơn css thuộc tính sc..vior vào thẻ html -->
+                <li><a href="#tour">Tour</a></li> 
+                <!-- ở phẩn href thì khi link id của thẻ nào đó vào nó sẽ chuyển hướng đến phần đấy khi click vào thẻ a-->
+                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a href="#">
+                        More 
+                        <i class="nav-arrow-circle-down ti-arrow-circle-down"></i>      
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: Navigation -->
+
+            <!-- Begin: Search button header -->
+
+                <!-- Menu btn for Mobile -->
+                <div id="mobile-menu" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                </div>
+
+                <!-- Search btn for PC,tablet-->
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+            <!-- End: Search button header -->
+        </div>
+
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">New York</h2>
+                <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- About section  -->
+            <div id="band" class="content-section">
+                <h2 class="section-heading">The Band</h2>
+                <p class="section-sub-heading">We love music</p>
+                <p class="about-text">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="row members-list">
+                    <div class="col col-third text-center mt-16 s-col-full">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="col col-third text-center mt-16 s-col-full">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="col col-third text-center mt-16 s-col-full">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="clear"></div> 
+                    <!-- dùng để cho member-list bao gồm tất cả các thẻ con -->
+                </div>
+            </div>
+
+            <!-- Tour section  -->
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading">TOUR DATES</h2>
+                    <p class="section-sub-heading">Remember to book your tickets!</p>
+                    <!-- Tickets -->
+                    <ul class="tickets-list">
+                        <li>Septemper <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
+                    <!-- Places -->
+                    <div class="row places-list"> 
+                        <!-- row và col là form mẫu của một kiểu hàng cột được css chug -->
+                        <div class="col col-third place-item mt-16 s-col-full">
+                            <img src="./assets/img/places/newyork.jpg" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-by-btn btn js-by-ticket s-full-width">By Tickets</button>
+                            </div>
+                        </div>
+                        
+                        <div class="col col-third place-item mt-16 s-col-full">
+                            <img src="./assets/img/places/paris.jpg" alt="Paris" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-by-btn btn js-by-ticket s-full-width">By Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="col col-third place-item mt-16 s-col-full">
+                            <img src="./assets/img/places/sanfran.jpg" alt="Sanfran" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Sanfran</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-by-btn btn js-by-ticket s-full-width">By Tickets</button>
+                            </div>
+                        </div>
+                        <!-- <div class="clear"></div> -->
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- Begin: Contact section  -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a> </p>
+                    </div>
+                    <div class="col col-half s-col-full contact-form">
+                        <!-- Thẻ <form>, các thẻ tạo phần tử điều khiển trong form như thẻ <input>, thẻ <textarea>, <button>, <label>,... -->
+                        <form action="">
+                            <div class="row">
+                                <!-- cách đặt tên chung của input là form-control -->
+                                <div class="s-col-full col col-half">
+                                    <input type="text" name="" required placeholder="Name" id="" class="form-control">
+                                </div>
+                                <div class="s-col-full col col-half s-mt-8">
+                                    <input type="email" name="" required placeholder="Email" id="" class="form-control">
+                                </div>
+                                <!-- <div class="clear"></div> -->
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" required placeholder="Message" id="" class="form-control">
+                                </div>
+                            </div>
+                            <input type="submit" class="contact-submit-btn form-sunmit-btn pull-right btn mt-16 s-full-width" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Contact section  -->
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="Map">
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="social-list">
+                <a href=""><i class="ti-facebook" ></i></a>
+                <a href=""><i class="ti-instagram" ></i></a>
+                <a href=""><i class="ti-youtube" ></i></a>
+                <a href=""><i class="ti-pinterest" ></i></a>
+                <a href=""><i class="ti-twitter" ></i></a>
+                <a href=""><i class="ti-linkedin" ></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+        </div>
+    </div>
+
+
+    <!-- Ticket form -->
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="modal-heading-icon ti-bag"></i>
+                Tickets
+            </header>
+            
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                    <!-- Thẻ label dùng để định nghĩa nhãn cho các thẻ input trong HTML. Tác dụng của label là làm cho thao tác nhập liệu trở nên dễ dàng hơn. 
+                        Cách dùng: Cho for của label vào id của thẻ input-->
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+            
+                <label for="ticket-email" class="modal-label">
+                    <i class="ti-user"></i>
+                   Send to
+                </label>
+                <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email..">
+                <!-- cho for bằng giá trị với id của thẻ input -->
+                <button id="by-tickets">
+                    Pay <i class="ti-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="https://shopee.vn/svipthi">help?</a></p>
+            </footer>
+        </div>  
+    </div>
+
+    <script>
+        //  *Lệnh để mở tickets (thêm open vào modal)
+        // const : biến , function : hàm 
+        const byBtns = document.querySelectorAll('.js-by-ticket')
+        const modal = document.querySelector('.js-modal')
+        function showByTickets () {
+            modal.classList.add('open')
+        }
+        
+        for (const byBtn of byBtns) {
+            byBtn.addEventListener('click', showByTickets)
+        }
+        
+        //  *Lệnh để đóng tickets 
+        const modalClose = document.querySelector('.js-modal-close')
+        function hideByTickets () {
+            modal.classList.remove('open')
+        }
+        modalClose.addEventListener('click', hideByTickets)
+            // đóg khi ấn vào khoảng không
+        modal.addEventListener('click', hideByTickets)
+        const modalContainer = document.querySelector('.js-modal-container')
+            modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+            // stopPropagation giúp cho không ảnh hưởng của 'hàm' cha(modal) nên con(modalContainer) 
+        })
+
+        // Menu cho Mobile
+
+        var header = document.getElementById('header');  // cho lấy giá trị id(header) gán vào(bằng) với header(biến var) 
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight // header.clientHeight = 46px = headerHeight
+            // Đóng, mở mobile menu
+        mobileMenu.onclick = function() {
+            // header.clientHeight: là chiều cao của thẻ header(var header = #header)
+            var isClosed = header.clientHeight === headerHeight; // được thực hiện(so sánh) từ phải qua trái. Dấu "===" là dùng để so sánh trog js 
+            if (isClosed) {
+                header.style.height = 'auto' // nếu đang đóng(isClosed = 46), bấm vào thì sẽ thực hiện code cho height = auto (Mở)
+            }
+
+            else // else: là nếu điều kiện của isClosed ≠ 46 thì sẽ thực hiện Code của else
+            { 
+                header.style.height = null // Nếu mà đag mở (isClosed ≠ 46px) thì ấn vào sẽ chạy dòng code này. 
+                // height của header có thể đặt là: null(rỗng) hoặc '46px' đều được.
+            }
+            // Nói đơn giản thì If để mở còn else để đóg
+        }
+
+            // Tự động đóng khi chọn j đó trog Menu(list) Mobile
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]')// querySelectorAll dùng để gọi css slector(nhiều thẻ)
+            for (var i = 0; i< menuItems.length; i++) {
+                var menuItem = menuItems[i];
+            menuItem.onclick = function (event) 
+            // khi click thì fn sẽ trả về một đối số (được gọi là event) 
+            {
+                // không bị ẩn đi khi ấn More
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav') // Nếu mà có thẻ(a,chị,e) liền kề và thẻ(a,chị,e) liền kề đó chứa class là subnav thì biết được, thẻ đó được select tới thẻ li .More = isParentMenu
+                // menuItem.nextElementSibling dùng để chỉ tới thẻ bên cạnh (là thẻ ul subnav) gần(anh,chị,em) với thẻ được gọi ra(là thẻ menuItem được gán = thẻ a ) nhất
+                    if (isParentMenu) 
+                    // nếu là isParentMenu(là More) thì event.preventDefault() bỏ đi mặt địh còn khôg thì eader.style.height = null ẩn đi
+                    { 
+                        event.preventDefault(); // giúp không bị nhảy lên đâu trang khi ấn vào More
+                        // bỏ qua cái mặc định (là cái href="#") 
+                    } else {
+                        header.style.height = null;
+                    }
+                }
+            }
+        </script>
+</body>
+</html>

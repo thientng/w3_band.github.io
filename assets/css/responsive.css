@@ -1,0 +1,114 @@
+/* PC : ≥ 1024px
+Tablet: ≥ 740px & < 1024px
+Mobile: < 740px
+ */
+
+/* PC */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet & Mobile */
+/* UX: tối ưu hóa dao diện cho ng dùng dễ dàng hơn  */
+@media (max-width: 64em) {
+    .btn {
+        padding: 15px 16px;
+    }
+    
+    #nav .subnav li a {
+        padding: 5px 12px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .contact-submit-btn {
+        font-size: 17px;
+    }
+
+    .socials-list {
+        font-size: 48px;
+    }
+
+    #footer .socials-list a {
+        margin: 0 8px;
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;    
+        display: inline-block;
+    }
+}
+
+
+/* Tablet */
+/* @media only screen and (min-width:46.25em) and (max-width: 64em) cách viết khác đầy đủ và chi tiết hơn */
+@media (min-width:46.25em) and (max-width: 64em) {
+    
+}
+
+/* Mobile */
+@media (max-width: 46.25em) {
+    .s-full-width,
+    .s-col-full {
+        width : 100%!important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px!important;
+    }
+
+    #header {
+        overflow: hidden; /* vì thẻ con của header vượt quá chiều cao(46px) của nó nên nó sẽ ẩn đi */
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search-btn {
+        display:none;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }  /* select tới thẻ li đầu tiên trong thẻ ul (bài pseudo class) */
+
+    #nav .subnav {
+        background-color: #292929;
+        position: initial; 
+        /* reset position về giá trị mặc định bỏ ̶a̶̶b̶̶s̶̶o̶̶l̶̶u̶̶t̶̶e̶  đi */
+    } 
+
+    #nav .subnav li a {
+        color: aliceblue;
+        padding: 5px 41px;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 32px
+    }
+
+}
